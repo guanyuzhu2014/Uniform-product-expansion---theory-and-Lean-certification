@@ -1,0 +1,31 @@
+Verification log for CoprimeFrobenius.lean
+==========================================
+File checked: CoprimeFrobenius.lean, 667 lines
+SHA-256 of the file on disk:                 34fbbb6e1efd1016c3bd31002147b1f5c426eabeb1c9032e8f3542b052adc0c4
+SHA-256 of the text submitted to the checker: 34fbbb6e1efd1016c3bd31002147b1f5c426eabeb1c9032e8f3542b052adc0c4  (identical)
+
+Checker: https://live.lean-lang.org (Lean 4 web editor; the Lean server and Mathlib run on the
+project's server, the kernel check happens there). Two independent toolchains were used.
+
+Run 1 — project "Latest Mathlib with Lean v4.36.0-rc2"   (Lean.versionString = "4.36.0-rc2")
+Run 2 — project "Stable Release (v4.35.0 with mathlib)"  (Lean.versionString = "4.35.0")
+
+Complete message list, identical in both runs up to the file name and version string:
+-------------------------------------------------------------------------------------
+All Messages ( warnings: 3, infos: 5 )
+ :363:15  warning  `if_neg` has been deprecated: Use `ite_eq_right` instead
+ :369:10  warning  `if_pos` has been deprecated: Use `ite_eq_left` instead
+ :370:17  warning  `if_neg` has been deprecated: Use `ite_eq_right` instead
+ :663:0   info     'CoprimeFrobenius.lemma_4_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+ :664:0   info     'CoprimeFrobenius.not_dvd_tw' depends on axioms: [propext, Classical.choice, Quot.sound]
+ :665:0   info     'CoprimeFrobenius.exists_selector_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+ :666:0   info     "4.36.0-rc2"      (run 1)   /   "4.35.0"   (run 2)
+ :667:0   info     "CoprimeFrobenius: all declarations checked"
+
+Errors: 0 in both runs.
+`sorry`: none in the file (grep); `sorryAx` absent from every axiom list; no `axiom` declarations.
+Only `set_option` in the file: `linter.unusedSectionVars false` (a linter, irrelevant to soundness).
+The three deprecation warnings are cosmetic (`if_pos`/`if_neg` renamed in core Lean).
+
+How to repeat: open https://live.lean-lang.org, pick either project in the dropdown, paste the file,
+wait until the last message ("CoprimeFrobenius: all declarations checked") appears.
