@@ -1,7 +1,6 @@
 # Phase 1 Lean formalisation — coprime-degree Frobenius twists
 
-Companion to `Uniform_product_expansion.pdf` (the note proving Assumption 2.1 of the balanced-product
-CCZ manuscript). This folder contains the Lean 4 / Mathlib formalisation of the three *new*
+Companion to `Uniform_product_expansion.pdf` (the note proving Assumption 2.1 of the manuscript 'Maximally parallelizable transversal non-Clifford gates on almost-good quantum LDPC codes and near-optimal magic state protocols'). This folder contains the Lean 4 / Mathlib formalisation of the three *new*
 ingredients of that note.
 
 ## Status (2026-10-27)
