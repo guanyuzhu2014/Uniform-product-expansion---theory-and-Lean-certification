@@ -1,6 +1,6 @@
 # Phase 1 Lean formalisation — coprime-degree Frobenius twists
 
-Companion to `assumption21_proof_v1.pdf` (the note proving Assumption 2.1 of the balanced-product
+Companion to `Uniform_product_expansion.pdf` (the note proving Assumption 2.1 of the balanced-product
 CCZ manuscript). This folder contains the Lean 4 / Mathlib formalisation of the three *new*
 ingredients of that note.
 
